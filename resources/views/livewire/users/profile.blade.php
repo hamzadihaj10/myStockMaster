@@ -29,18 +29,7 @@
                         </select>
                     </div>
 
-                    <div class="w-full px-2">
-                        <x-label for="is_active" :value="__('Status')" required />
-                        <select
-                            class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md mt-1"
-                            name="is_active" id="is_active" wire:model="is_active" required>
-                            <option value="1" {{ $user->is_active == 1 ? 'selected' : '' }}>
-                                {{ __('Active') }}
-                            </option>
-                            <option value="2" {{ $user->is_active == 2 ? 'selected' : '' }}>
-                                {{ __('Deactive') }}</option>
-                        </select>
-                    </div>
+                  
                     <div class="w-full px-2">
                         <x-button type="submit" primary class="mt-4">
                             {{ __('Update') }}
